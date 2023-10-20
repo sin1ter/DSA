@@ -6,10 +6,10 @@ int partition(int arr[], int low, int high) {
     int i = low;
     int j = high;
     while(i < j) {
-        while(arr[i] <= pivot and i <= high - 1) {
+        while(arr[i] >= pivot and i <= high - 1) {
             i++;
         }
-        while(arr[j] > pivot and j >= low + 1) {
+        while(arr[j] < pivot and j >= low + 1) {
             j--;
         }
         if(i < j) {
