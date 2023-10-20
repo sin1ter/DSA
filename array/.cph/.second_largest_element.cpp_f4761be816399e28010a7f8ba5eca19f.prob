@@ -1,0 +1,1 @@
+{"name":"Local: second_largest_element","url":"c:\\Users\\USER\\Documents\\C++\\array\\second_largest_element.cpp","tests":[{"id":1697773879998,"input":"6\n1 2 4 7 7 5","output":"5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\USER\\Documents\\C++\\array\\second_largest_element.cpp","group":"local","local":true}

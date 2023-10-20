@@ -1,0 +1,1 @@
+{"name":"Local: largest_element","url":"c:\\Users\\USER\\Documents\\C++\\array\\largest_element.cpp","tests":[{"id":1697770489937,"input":"6\n124 1 3 6 26 7","output":"Largest element in the array: 124"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\USER\\Documents\\C++\\array\\largest_element.cpp","group":"local","local":true}
