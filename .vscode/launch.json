@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/USER/Documents/C++/sorting",
-      "program": "c:/Users/USER/Documents/C++/sorting/build/Debug/outDebug",
+      "cwd": "c:/Users/USER/Documents/C++/array",
+      "program": "c:/Users/USER/Documents/C++/array/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
