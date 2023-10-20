@@ -5,6 +5,7 @@ void merge(int arr[], int low, int mid, int high) {
     vector<int> temp;
     int left = low;
     int right = mid + 1;
+    //copying element from the left and right side
     while(left <= mid and right <= high) {
         if(arr[left] < arr[right]) {
             temp.push_back(arr[left]);
@@ -15,14 +16,17 @@ void merge(int arr[], int low, int mid, int high) {
             right++;
         }
     }
+    //copying remaining element from the array of the left side
     while(left <= mid) {
         temp.push_back(arr[left]);
         left++;
     }
+    //copying remaining element from the array of the right side
     while(right <= high) {
         temp.push_back(arr[right]);
         right++;
     }
+    //merge back to original array
     for(int i = low; i <= high; i++) {
         arr[i] = temp[i - low];
     }
