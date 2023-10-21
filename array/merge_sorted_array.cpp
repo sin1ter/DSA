@@ -57,3 +57,11 @@ int main()
     cout << val << " ";
   return 0;
 }
+
+/*
+we can merge the array using the set data structure and also with the map data structure.
+But the time complexity will be for map and set will be O(n + m) * log(m + n)
+and space complexity will be O(n + m) for both data structure.
+So the best way to use is two pointer. Time complexity for this is O(n + m) 
+and space complexity will be O(m + n) if space of Unionarray is considered.
+*/
