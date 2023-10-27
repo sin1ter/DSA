@@ -15,7 +15,7 @@ using namespace std;
 //     return -1;
 // }
 
-int moores_voting_algo(int arr[], int n) { // for this time complexity is O(2n)
+int moores_voting_algo(int arr[], int n) { // for this time complexity is O(n) and space complexity is O(1).
     int count = 0;
     int element;
     for(int i = 0; i < n; i++) { 
