@@ -1,0 +1,1 @@
+{"name":"Local: rearrageArray","url":"c:\\Users\\USER\\Documents\\C++\\array\\rearrageArray.cpp","tests":[{"id":1698565843889,"input":"6\n3 1 -2 -5 2 -4","output":"3 -2 1 -5 2 -4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\USER\\Documents\\C++\\array\\rearrageArray.cpp","group":"local","local":true}
