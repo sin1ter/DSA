@@ -2,6 +2,7 @@
 using namespace std;
 
 vector<int> next_permutation(vector<int>& arr, int n) {
+    // for this time complexity is O(3*n)(for the two loops and the reverse function) and space complexity is O(1)
     int index = -1;
     for(int i = n - 2; i >= 0; i--) {
         if(arr[i] < arr[i + 1]) {
