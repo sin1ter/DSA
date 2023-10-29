@@ -28,6 +28,19 @@ void kadanes_algo(int arr[], int n, int& maximum, int& ansStart, int& ansEnd) {
     }
 }
 
+int kadanes_algos(int arr[], int n) {
+    int maxi = INT_MIN;
+    int sum = 0;
+    for(int i = 0; i < n; i++) {
+        sum += arr[i];
+        maxi = max(maxi, sum);
+        if(sum < 0) {
+            sum = 0;
+        }
+    }
+    return maxi;
+}
+
 int main() {
     int n;
     cin >> n;
@@ -35,15 +48,16 @@ int main() {
     for(int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-    int maximum, ansStart, ansEnd;
-    kadanes_algo(arr, n, maximum, ansStart, ansEnd);
-    cout << maximum << '\n';
-    if(ansStart <= ansEnd) {
-        for(int i = ansStart; i <= ansEnd; i++) {
-            cout << arr[i] << " ";
-        }
-    }
-    else {
-        cout << "NO subarray found";
-    }
+    // int maximum, ansStart, ansEnd;
+    // kadanes_algo(arr, n, maximum, ansStart, ansEnd);
+    // cout << maximum << '\n';
+    // if(ansStart <= ansEnd) {
+    //     for(int i = ansStart; i <= ansEnd; i++) {
+    //         cout << arr[i] << " ";
+    //     }
+    // }
+    // else {
+    //     cout << "NO subarray found";
+    // }
+    cout << kadanes_algos(arr, n);
 }
