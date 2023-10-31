@@ -12,23 +12,39 @@ vector<vector<int>> rotate(vector<vector<int>>& matrix) {
     return rotated;
 }
 
+vector<vector<int>> rotateOptimal(vector<vector<int>>& matrix) {
+    // transpose
+    // O(n / 2 * n / 2)
+    int n = matrix.size();
+    for(int i = 0; i < n - 1; i++) {
+        for(int j = i + 1; j < n; j++) {
+            swap(matrix[i][j], matrix[j][i]);
+        }
+    }
+    // reverse
+    //O(n * n / 2)
+    for(int i = 0; i < n; i++) {
+        reverse(matrix[i].begin(), matrix[i].end());
+    }
+    return matrix;
+    // space complexity is O(1)
+}
+
 int main() {
     int n;
-    cout << "Enter the size of the matrix (n x n): ";
     cin >> n;
 
     vector<vector<int>> arr(n, vector<int>(n));
 
-    cout << "Enter the elements of the matrix:" << endl;
+
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             cin >> arr[i][j];
         }
     }
 
-    vector<vector<int>> rotated = rotate(arr);
+    vector<vector<int>> rotated = rotateOptimal(arr);
 
-    cout << "Rotated matrix:" << endl;
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
             cout << rotated[i][j] << " ";
