@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-vector<int> spiralMatrix(vector<vector<int>> &matrix) {
-
+vector<int> spiralMatrix(vector<vector<int>> &matrix, int n) {
+    
     int left = 0, right = n - 1;
     int top = 0, bottom = n - 1;
     vector<int> ans;
@@ -45,4 +45,11 @@ int main() {
             cin >> arr[i][j];
         }
     }
+    cout << endl;
+    
+    vector<int> result = spiralMatrix(arr, n);
+    for(int i = 0; i < result.size(); i++) {
+        cout << result[i] << " ";
+    }
+    cout << '\n';
 }
