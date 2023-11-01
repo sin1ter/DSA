@@ -1,3 +1,4 @@
+// Find the Majority Element that occurs more than N / 2 times.
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -28,7 +29,13 @@ int moores_voting_algo(int arr[], int n) { // for this time complexity is O(n) a
         }
         else count--;
     }
-    return element;
+    int count1 = 0;
+    for(int i = 0; i < n; i++) {
+        if(arr[i] == element) count++;
+    }
+    if(count1 > (n / 2)) return element;
+        return element;
+        
     return -1;
 }
 
