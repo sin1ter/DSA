@@ -60,7 +60,7 @@ vector<vector<int>> two_pointer(vector<int>& arr, int n) {
             }
             else {
                 vector<int> temp = {arr[i], arr[j], arr[k]};
-                ans.push_back(temp);
+                ans.push_back(temp); 
                 j++;
                 k--;
                 while(j < k and arr[j] == arr[j - 1]) j++;
