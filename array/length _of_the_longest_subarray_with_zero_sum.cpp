@@ -16,6 +16,8 @@ int longest_length(vector<int>& arr, int n) {
         }
     }
     return longestLen;
+    //Time complexity is O(nlogn)
+    //Space complexity is O(n)
 }
 
 int main() {
