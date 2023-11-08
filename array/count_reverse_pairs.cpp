@@ -70,6 +70,8 @@ int mergeSort(vector<int>& arr, int low, int high) {
 
 int count_reverse_pairs(vector<int>& arr, int n) {
     return mergeSort(arr, 0, n - 1);
+    // Time complexity for this O(2n*logn)
+    // Space complexity for this O(n) // for the merge
 }
 
 int main() {
