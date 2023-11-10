@@ -1,0 +1,1 @@
+{"name":"Local: floor_and_ceil__in","url":"c:\\Users\\USER\\Documents\\C++\\binary_search\\floor_and_ceil__in.cpp","tests":[{"id":1699626793943,"input":"6 5\n3 4 4 7 8 10","output":"7 4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\USER\\Documents\\C++\\binary_search\\floor_and_ceil__in.cpp","group":"local","local":true}
