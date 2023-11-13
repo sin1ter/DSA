@@ -1,3 +1,5 @@
+//Given an integer array of size, sorted in ascending order and a target value k.
+//Now the array is sorted at some pivot point unknown to you. Find the index at which k is present and if k is not present return -1.
 #include<bits/stdc++.h>
 using namespace std;
 
