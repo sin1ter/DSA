@@ -39,6 +39,8 @@ bool search(vector<int>& arr, int n, int x) {
         }
     }
     return false;
+    //for this time complexity is O(logn) for average but for the worst case it can take O(n/2) because we are trimming down the left and right by incrementing and decrementing.
+    // space complexity is O(1).
 }
 
 int main() {
