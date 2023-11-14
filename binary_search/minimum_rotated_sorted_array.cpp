@@ -2,11 +2,15 @@
 using namespace std;
 
 int findMin(vector<int>& arr, int n) {
-    int ans = INT_MAX;
     int left = 0;
     int right = n - 1;
+    int ans = INT_MAX;
     while(left <= right) {
         int mid = left + (right - left) / 2;
+        if(arr[left] <= arr[right]) { // if the arr[left] <= arr[mid] and arr[mid] <= arr[right] so the array is sorted so if the arr[left] <= arr[right] so we can say that arr[left] will be the minimum.
+            ans = min(ans, arr[left]);
+            break;
+        }
         if(arr[left] <= arr[mid]) {
             ans = min(ans, arr[left]);
             left = mid + 1;
@@ -17,6 +21,8 @@ int findMin(vector<int>& arr, int n) {
         }
     }
     return ans;
+    //Time Complexity is O(logn)
+    //Space Complexity is O(1)
 }
 
 int main() {
