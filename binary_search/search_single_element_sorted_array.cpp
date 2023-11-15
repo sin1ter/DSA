@@ -17,11 +17,17 @@ int search_using_binarySearch(vector<int>& arr, int n) {
     int right = n - 1;
     while(left <= right) {
         int mid = left + (right - left) / 2;
+        //if arr[mid] is the single element.
         if(arr[mid] != arr[mid - 1] and arr[mid] != arr[mid + 1]) return arr[mid];
+
+        //Now in the left.
         if(mid % 2 == 1 and arr[mid] == arr[mid - 1]  or mid % 2 == 0 and arr[mid] == arr[mid + 1]) {
+            // element the left half.
             left = mid + 1;
         }
+        //Now in the right
         else {
+            // element the right half.
             right = mid - 1;
         }
     }
