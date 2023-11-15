@@ -31,6 +31,8 @@ int search_using_binarySearch(vector<int>& arr, int n) {
             right = mid - 1;
         }
     }
+    // as always remember to return dummy statement
+    return -1;
 }
 
 int main() {
