@@ -8,16 +8,17 @@ int find(int n) {
 }
 
 int find_binarySearch(int n) {
-    int left = 0;
-    int right = n - 1;
-    while(left <= right) {
-        int mid = left + (right - left) / 2;
-        if(mid * mid <= n) left = mid + 1;
+    int low = 1;
+    int high = n;
+    while(low <= high) {
+        long long mid = low + (high - low) / 2;
+        long long val = mid * mid;
+        if(val <= (long long) n) low = mid + 1;
         else {
-            right = mid - 1;
+            high = mid - 1;
         }
     }
-    return right; // dummy return statemetn.
+    return high;
 }
 
 int main() {
