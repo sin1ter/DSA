@@ -3,6 +3,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// return 1 if == m
+// return 0 if < m
+// return 2 if > m
 int func(int mid, int n, int m) {
   long long ans = 1;
   for (int i = 1; i <= n; i++) {
