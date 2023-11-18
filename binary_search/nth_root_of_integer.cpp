@@ -28,6 +28,7 @@ int NthRoot(int n, int m) {
     else right = mid - 1;
   }
   return -1;
+  // time complexity for this is O(logN) and Space complexity is O(1)
 }
 
 int main() {
