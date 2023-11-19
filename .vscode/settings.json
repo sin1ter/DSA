@@ -60,6 +60,7 @@
   "files.associations": {
     "*.embeddedhtml": "html",
     "cmath": "cpp",
-    "vector": "cpp"
+    "vector": "cpp",
+    "iostream": "cpp"
   }
 }
