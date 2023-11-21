@@ -65,6 +65,8 @@ int minDays(vector<int>& bloomDay, int m, int k) {
         }
     }
     return low;
+    // Time complexity is O(N*log(max - min + 1))
+    // Space complexity is O(1)
 }
 
 int main() {
