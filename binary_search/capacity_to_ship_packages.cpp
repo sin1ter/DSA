@@ -36,10 +36,11 @@ int shipWithinDays(vector<int>& arr, int days) {
             low = mid + 1;
         }
     }
+    
     return low;
 }
 
-
+ 
 int main() {
     int n, days;
     cin >> n >> days;
