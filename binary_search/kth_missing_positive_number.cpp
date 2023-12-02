@@ -10,6 +10,8 @@ int kth_brute(vector<int> arr, int n, int k) {
     }
     return k;
 }
+// time complexity for this is O(n)
+// space complexity is O(1)
 
 int kth_missing_number(vector<int> arr, int n, int k) {
     int low = 0;
@@ -26,6 +28,8 @@ int kth_missing_number(vector<int> arr, int n, int k) {
     }
     return k + high + 1;
 }
+// time complexity is O(logn)
+// space complexity is O(1)
 
 int main() {
     int n, k;
