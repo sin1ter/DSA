@@ -26,7 +26,8 @@ int kth_missing_number(vector<int> arr, int n, int k) {
             high = mid - 1;
         }
     }
-    return k + high + 1;
+    // return low + k; both works.
+    return high + 1 + k; 
 }
 // time complexity is O(logn)
 // space complexity is O(1)
