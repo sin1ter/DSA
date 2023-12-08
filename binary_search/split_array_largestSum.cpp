@@ -16,7 +16,7 @@ int countPartitions(vector<int>& arr, int k) {
     return count;
 }
 
-int brute(vector<int>& arr, int n, int k) {
+int brute_largestSubarraySumMinimized(vector<int>& arr, int n, int k) {
     int low = *max_element(arr.begin(), arr.end());
     int high = accumulate(arr.begin(), arr.end(), 0);
     for(int i = low; i < high; i++) {
@@ -25,9 +25,11 @@ int brute(vector<int>& arr, int n, int k) {
         }
     }
     return low;
+    // Time Complexity is O(n*(sum(arr)-max(arr)) + 1)
+    // Space Complexity is O(1)
 }
 
-int binarySearch(vector<int>& arr, int n, int k) {
+int binarySearch_largestSubarraySumMinimized(vector<int>& arr, int n, int k) {
     int low = *max_element(arr.begin(), arr.end());
     int high = accumulate(arr.begin(), arr.end(), 0);
     while(low <= high) {
@@ -40,6 +42,8 @@ int binarySearch(vector<int>& arr, int n, int k) {
         }
     }
     return low;
+    // Time Complexity is O(n*log(sum(arr)-max(arr)) + 1)
+    // Space Complexity is O(1)
 }
 
 int main() {
