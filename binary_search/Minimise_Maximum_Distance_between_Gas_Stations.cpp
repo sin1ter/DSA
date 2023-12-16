@@ -29,6 +29,8 @@ using namespace std;
 //     }
 
 //     return pq.top().first;
+// Time complexity O(n*log(len) + O(n)
+// Space complexity is O(n - 1) + O(n - 1)
 // }
 
 
@@ -63,6 +65,9 @@ long double minimiseMaxDistanceUsingBinarySearch(vector<int>& arr, int k) {
         }
     }
     return high;
+
+    // Time complexity O(n*log(len) + O(n)
+    // Space complexity is O(1)
 }
 
 int main() {
